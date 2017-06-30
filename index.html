@@ -2,25 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
     <title>My little project</title>
 
     <link rel="stylesheet" type="text/css" href="vendor/twbs/bootstrap/dist/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css?111"/>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/script-todo.js"></script>
+    <script src="js/script-todo.js?2111"></script>
 
 </head>
 <body>
-    <h1>TODOLIST</h1>
-    <div>
-        <input id="input-val" value="Введите значение" type="text" class="inpul-value">
-    </div>
-    <div>
-        <input id="all" type="button" value="all" class="btn btn-default">
-        <input id="active" type="button" value="active" class="btn btn-default">
-        <input id="completed" type="button" value="completed" class="btn btn-default">
+    <div class="body">
+        <h1 class="title">TODOS</h1>
+        <div>
+            <!--<input type="checkbox" class="checkbox">-->
+            <input id="input-val" value="" placeholder="What needs to be done?" type="text" class="input-value">
+        </div>
+
+        <div class="filters hide">
+            <div id="list-content">
+                <!--<div class="column list-row row-num-1">-->
+                    <!--<input type="checkbox" class="checkbox checkbox-completed">-->
+                    <!--<input type="text" class="input-value list-value" value="">-->
+                    <!--<input type="button" value="X" class="btn btn-danger delete-button">-->
+                <!--</div>-->
+            </div>
+
+            <input type="text" class="item-value" value="0 item left" disabled="disabled">
+            <input id="all" type="button" value="all" class="btn btn-default">
+            <input id="active" type="button" value="active" class="btn btn-default">
+            <input id="completed" type="button" value="completed" class="btn btn-default">
+            <input id="clear-completed" type="button" value="Clear completed" class="btn btn-default">
+        </div>
     </div>
 </body>
 </html>
